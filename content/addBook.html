@@ -1,0 +1,22 @@
+<section class="content-add">
+  <h2>Add a New Book</h2>
+    <form id="inputBook">
+      <div class="input">
+        <label for="inputBookTitle">Title</label>
+        <input id="inputBookTitle" maxlength="50" type="text" required>
+      </div>
+      <div class="input">
+        <label for="inputBookAuthor">Author</label>
+        <input id="inputBookAuthor" type="text" required>
+      </div>
+      <div class="input">
+        <label for="inputBookYear">Year Published</label>
+        <input id="inputBookYear" type="number" required>
+      </div>
+      <div class="input_inline">
+        <label for="inputBookIsComplete">Finished Reading</label>
+        <input id="inputBookIsComplete" type="checkbox">
+      </div>
+      <button id="bookSubmit" type="submit">Add Book to <span id="isRead">Unread Books</span></button>
+    </form>
+</section>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf App</title>
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="jumbotron">
+      <h1>Bookshelf App</h1>
+      <p>Organize your whole book list here!</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="sidebar">
+      <nav>
+        <div class="sidebar-header">
+          <img id="sidebarButton" src="assets/icons/hamburger.svg" alt="Menu">
+          <h2>Menu</h2>
+        </div>
+        <hr>
+        <ul>
+          <li onclick="loadContent('allBooks')"><a><span class="icon">
+            <img src="assets/icons/books.svg" alt="Add Icon"></span>All Books</a></li>
+          <li onclick="loadContent('unreadBooks')"><a><span class="icon">
+            <img src="assets/icons/unread.svg" alt="Add Icon"></span>Unread Books</a></li>
+          <li onclick="loadContent('readBooks')"><a><span class="icon">
+            <img src="assets/icons/read.svg" alt="Add Icon"></span>Read Books</a></li>
+          <li onclick="loadContent('addBook')"><a><span class="icon">
+            <img src="assets/icons/add.svg" alt="Add Icon"></span>Add New Book</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="content" class="content">
+      Hello
+    </div>
+  </main>
+  
+   <script src="script.js"></script>
+</body>
+</html>

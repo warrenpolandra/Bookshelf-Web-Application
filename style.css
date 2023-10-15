@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFD2D7;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #322653;
+    text-align: center;
+    color: white;
+}
+
+main {
+    height: calc(100vh - 152.8px);
+    display: flex;
+}
+
+.sidebar {
+    margin-top: 0%;
+    height: 100%;
+    flex-direction: column;
+    left: 0;
+    background-color: #9288F8;
+    color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    max-width: 70px;
+    min-width: 70px;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar .icon img {
+    margin-right: 15px;
+    margin-left: 3px;
+    display: inline;
+    width: 34px;
+    fill: white;
+}
+
+.sidebar.open {
+    min-width: 280px;
+    transition: 0.5s;
+}
+
+.sidebar a {
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    display: flex;
+    align-items: center; 
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar li {
+    list-style-type: none;
+    padding: 10px 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar li:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+.sidebar li:hover a {
+    font-weight: 500;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-header {
+    display: flex;
+    margin: 10px 0px 0px 10px;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+.sidebar hr {
+    margin: 0;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#sidebarButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 10px 15px 15px 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    padding: 0px 100px;
+    overflow-y: scroll;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.content-add {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-add > h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #8062D6;
+}
+
+.content-add > form > .input {
+    margin: 8px 0;
+}
+
+.content-add > form > button {
+    background-color: #8062D6;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.content-add > form > button > span {
+    font-weight: bold;
+}
+
+.content-add > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.content-add > form > .input > label {
+    color: #8062D6;
+    font-weight: bold;
+}
+
+.content-add > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.content-add > form > .input_inline > label {
+    color: #8062D6;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#inputBookIsComplete {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.book_shelf > .searchBook {
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+
+.book_shelf > .searchBook > label {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.book_shelf > .searchBook > input {
+    padding: 5px;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.book_shelf > .searchBook > button {
+    background-color: #8062D6;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #8062D6;
+    margin-top: 50px;
+}
+
+.book_shelf > .book_list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    max-height: 100%;
+    overflow-y: auto;
+    justify-content: space-around;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 5px solid white;
+    border-radius: 5px;
+    margin: 10px;
+    align-self: flex-start;
+    justify-self: flex-start;
+    width: 200px;
+    background-color: #9288F8;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 8px 0;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 5px 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: red;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+   
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 0px 50px;
+    }
+
+    #sidebarButton {
+        cursor: default;
+    }
+
+    .sidebar.open {
+        min-width: 70px;
+        max-width: 70px;
+    }
+}

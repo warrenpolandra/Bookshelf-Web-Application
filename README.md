@@ -1,4 +1,4 @@
-# Submission-Dicoding-Belajar-Dasar-Pemrograman-Web
+# Bookshelf Web Application
 Submission kelas Dicoding: Belajar Dasar Pemrograman Web. Membuat aplikasi Web Bookshelf App. Aplikasi dibuat dengan HTML dan CSS dan JavaScript dasar. Aplikasi berguna untuk menyimpan data buku dan dipisah berdasarkan status buku jika sudah selesai dibaca atau belum. Data buku-buku yang dimasukkan akan disimpan ke dalam web local storage.
 
 ## Fitur Aplikasi
